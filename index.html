@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Sicherheit: nur Ressourcen von dieser Domain (kein CDN, kein Tracking) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ═══ SEO ═══ -->
+  <title>Ana Mercedes Murray Adames — Fachinformatikerin (Anwendungsentwicklung) in Umschulung | Hamburg</title>
+  <meta name="description" content="Ana Mercedes Murray Adames — Umschulung zur Fachinformatikerin für Anwendungsentwicklung am CBW Hamburg. PCAP (Python) und PSM I zertifiziert. Sucht Praktikum 26.04.–30.11.2027 in Hamburg.">
+  <meta name="keywords" content="Fachinformatikerin Anwendungsentwicklung, Umschulung, Praktikum Hamburg, Python, Java, SQL, Scrum, PCAP, PSM I, CBW Hamburg, Ana Murray, anamurray.de">
+  <meta name="author" content="Ana Mercedes Murray Adames">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://anamurray.de">
+
+  <!-- ═══ Open Graph ═══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anamurray.de">
+  <meta property="og:title" content="Ana Mercedes Murray Adames — Angehende Fachinformatikerin | Hamburg">
+  <meta property="og:description" content="Von der Pflege zur Softwareentwicklung. Portfolio, Projekte und Zertifikate — Praktikum gesucht: 26.04.–30.11.2027.">
+  <meta property="og:image" content="https://anamurray.de/assets/images/og-image.jpg">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ana Mercedes Murray — Angehende Fachinformatikerin, Hamburg">
+  <meta name="twitter:description" content="Von der Pflege zur Softwareentwicklung.">
+
+  <!-- ═══ Structured Data ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ana Mercedes Murray Adames",
+    "jobTitle": "Fachinformatikerin für Anwendungsentwicklung (Umschulung)",
+    "url": "https://anamurray.de",
+    "address": { "@type": "PostalAddress", "addressLocality": "Hamburg", "addressCountry": "DE" },
+    "sameAs": [
+      "https://www.linkedin.com/in/ana-mercedes-murray-a96753414/",
+      "https://github.com/MurrayCloud"
+    ]
+  }
+  </script>
+
+  <!-- ═══ Favicon (inline SVG placeholder) ═══ -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23060608'/%3E%3Ctext x='50' y='72' font-size='56' font-family='serif' font-weight='700' fill='%23C8A87A' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
+
+  <!-- ═══ Schriften (selbst gehostet, keine Verbindung zu Google) ═══ -->
+  <link rel="stylesheet" href="assets/fonts.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════════
+       COOKIE CONSENT BANNER
+  ════════════════════════════════════════════════════════════════════════════════════ -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__icon" aria-hidden="true">🔒</div>
+      <div class="cookie-banner__text">
+        <p id="cookie-title" class="cookie-banner__title">Datenschutz-Hinweis</p>
+        <p id="cookie-desc">Diese Website setzt keine Cookies und verwendet kein Tracking oder Analytics. Ihre Sprachauswahl wird nur lokal in Ihrem Browser gespeichert.
+          <a href="#" class="cookie-banner__link" data-modal="datenschutz">Datenschutzerklärung lesen</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button id="cookie-accept" class="btn btn--primary btn--sm">Verstanden</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════════
+       CUSTOM CURSOR
+  ════════════════════════════════════════════════════════════════════════════════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════════
+       PRELOADER
+  ════════════════════════════════════════════════════════════════════════════════════ -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__content">
+      <div class="preloader__logo">
+        <span class="preloader__logo-text">AM</span>
+      </div>
+      <div class="preloader__bar-wrapper">
+        <div class="preloader__bar">
+          <div class="preloader__bar-fill"></div>
+        </div>
+      </div>
+      <p class="preloader__tagline">Von der Pflege zur Softwareentwicklung</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Hauptnavigation">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="Ana Murray — Startseite">
+        <span class="navbar__logo-mark">AM</span>
+      </a>
+
+      <button class="navbar__burger" id="navbar-burger"
+        aria-expanded="false" aria-controls="navbar-menu" aria-label="Navigation öffnen">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__menu" id="navbar-menu" role="list">
+        <li><a href="#about"          class="navbar__link" data-i18n="nav.about">Über mich</a></li>
+        <li><a href="#timeline"       class="navbar__link" data-i18n="nav.journey">Journey</a></li>
+        <li><a href="#skills"         class="navbar__link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects"       class="navbar__link" data-i18n="nav.projects">Projekte</a></li>
+        <li><a href="#certifications" class="navbar__link" data-i18n="nav.certs">Zertifikate</a></li>
+        <li><a href="#contact"        class="navbar__link" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+
+      <div class="lang-switcher" role="group" aria-label="Sprache wählen">
+        <button class="lang-btn is-active" data-lang="de" aria-pressed="true">DE</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+
+      <a href="assets/cv/ana-murray-cv.pdf" class="navbar__cv btn btn--primary btn--sm" download aria-label="Lebenslauf herunterladen">
+        CV ↓
+      </a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="hero" class="hero" aria-label="Willkommen — Ana Murray">
+      <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__orbs" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
+      <p class="hero__watermark" aria-hidden="true">PRÄZISION</p>
+
+      <div class="hero__inner">
+        <!-- Left: Text -->
+        <div class="hero__text">
+
+          <div class="hero__eyebrow" data-anim="fade-up">
+            <span class="hero__location">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Hamburg, Deutschland
+            </span>
+            <span class="hero__available">
+              <span class="hero__pulse" aria-hidden="true"></span>
+              <span data-i18n="hero.available">Praktikum ab 26.04.2027</span>
+            </span>
+          </div>
+
+          <h1 class="hero__name" data-anim="fade-up" data-delay="0.08">
+            <span class="hero__name-line1" id="scramble-target">Ana Mercedes</span>
+            <span class="hero__name-line2">Murray Adames</span>
+          </h1>
+
+          <p class="hero__role" data-anim="fade-up" data-delay="0.16">
+            <span data-i18n="hero.role">Angehende Fachinformatikerin für Anwendungsentwicklung</span>
+            <span class="hero__role-sep" aria-hidden="true"> · </span>
+            <span class="hero__role-rotating" id="rotating-title" aria-live="polite">Python · PCAP</span>
+          </p>
+
+          <div class="hero__tagline-block" data-anim="fade-up" data-delay="0.22">
+            <p class="hero__tagline-de" data-i18n="hero.tagline.de">"Von der Pflege zur Softwareentwicklung."</p>
+            <p class="hero__tagline-en">From Healthcare to Software Development.</p>
+          </div>
+
+          <div class="hero__langs" data-anim="fade-up" data-delay="0.28" aria-label="Sprachen: Deutsch, Englisch, Spanisch">
+            <span class="lang-chip">DE</span>
+            <span class="lang-chip">EN</span>
+            <span class="lang-chip">ES</span>
+          </div>
+
+          <nav class="hero__cta-row" data-anim="fade-up" data-delay="0.34" aria-label="Schnellzugriff">
+            <a href="#projects" class="btn btn--primary btn--mag">
+              <span data-i18n="hero.cta.projects">Projekte entdecken</span>
+            </a>
+            <a href="#contact" class="btn btn--ghost btn--mag">
+              <span data-i18n="hero.cta.contact">Kontakt aufnehmen</span>
+            </a>
+            <div class="hero__icon-links">
+              <a href="https://www.linkedin.com/in/ana-mercedes-murray-a96753414/"
+                 class="hero__icon-btn" target="_blank" rel="noopener noreferrer"
+                 aria-label="LinkedIn Profil öffnen">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://github.com/MurrayCloud"
+                 class="hero__icon-btn" target="_blank" rel="noopener noreferrer"
+                 aria-label="GitHub Profil öffnen">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="assets/cv/ana-murray-cv.pdf"
+                 class="hero__icon-btn hero__icon-btn--cv" download
+                 aria-label="Lebenslauf herunterladen">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>CV</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Right: Visual card stack -->
+        <div class="hero__visual" aria-hidden="true" data-anim="fade-left" data-delay="0.2">
+          <div class="hero__card-stack">
+            <div class="hero__card hero__card--3"></div>
+            <div class="hero__card hero__card--2"></div>
+            <div class="hero__card hero__card--1">
+              <div class="hero__card-inner">
+                <div class="hero__card-row">
+                  <span class="hero__card-pill hero__card-pill--op">⚕ Pflege</span>
+                  <span class="hero__card-arrow">→</span>
+                  <span class="hero__card-pill hero__card-pill--dev">&lt;/&gt; Entwicklung</span>
+                </div>
+                <div class="hero__card-metrics">
+                  <div class="hero__metric">
+                    <span class="hero__metric-val">PCAP</span>
+                    <span class="hero__metric-lbl">Python</span>
+                  </div>
+                  <div class="hero__metric">
+                    <span class="hero__metric-val">PSM I</span>
+                    <span class="hero__metric-lbl">Scrum.org</span>
+                  </div>
+                  <div class="hero__metric">
+                    <span class="hero__metric-val">3</span>
+                    <span class="hero__metric-lbl">Sprachen</span>
+                  </div>
+                </div>
+                <div class="hero__card-tag">Hamburg · CBW 2025–2027</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll-cue" aria-label="Nach unten scrollen">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="about" class="section about section--gradient-title" aria-labelledby="about-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">01</span>
+          <span class="section__eyebrow" data-i18n="about.eyebrow">01 — Über mich</span>
+          <h2 id="about-heading" class="section__title" data-i18n="about.title">
+            Von der Pflege<br><em>zum Code</em>
+          </h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__body" data-anim="fade-up">
+            <blockquote class="about__quote" data-i18n="about.quote">
+              "In der Pflege wie im Code zählt dasselbe: Sorgfalt, Verantwortung und der Wille, es richtig zu machen."
+            </blockquote>
+
+            <div class="about__copy">
+              <p data-i18n="about.p1">Ich bin Ana Mercedes Murray Adames — ich komme aus der Pflege und werde <strong>Fachinformatikerin für Anwendungsentwicklung</strong>.</p>
+              <p data-i18n="about.p2">In meiner Ausbildung zur <strong>Gesundheits- und Pflegeassistentin</strong> (2023–2025) in der ambulanten Pflege in Hamburg habe ich gelernt, lückenlos zu dokumentieren, verantwortungsvoll mit sensiblen Gesundheitsdaten umzugehen und unter Zeitdruck die richtigen Prioritäten zu setzen. Genau das brauche ich heute in der Softwareentwicklung.</p>
+              <p data-i18n="about.p3">Seit Dezember 2025 mache ich meine <strong>Umschulung am CBW Hamburg</strong> (IHK-Abschluss 2027). Parallel habe ich mich als <strong>PCAP – Certified Associate Python Programmer</strong> und <strong>Professional Scrum Master I</strong> zertifiziert.</p>
+              <p data-i18n="about.p4">Für meine betriebliche Lernphase suche ich ein <strong>Praktikum vom 26.04. bis 30.11.2027</strong> in Hamburg — in einem Team, in dem ich echten Code schreibe, Fragen stellen darf und Verantwortung übernehme.</p>
+            </div>
+
+            <ul class="about__facts" role="list" aria-label="Fakten über Ana">
+              <li class="about__fact"><span aria-hidden="true">📍</span><span data-i18n="about.fact1">Hamburg, Deutschland</span></li>
+              <li class="about__fact"><span aria-hidden="true">🎓</span><span data-i18n="about.fact2">Umschulung zur Fachinformatikerin für Anwendungsentwicklung · CBW Hamburg</span></li>
+              <li class="about__fact"><span aria-hidden="true">⚕</span><span data-i18n="about.fact3">Gesundheits- und Pflegeassistentin (Abschluss 2025)</span></li>
+              <li class="about__fact"><span aria-hidden="true">🌍</span><span data-i18n="about.fact4">Deutsch &amp; Spanisch (Muttersprachen) · Englisch (B2)</span></li>
+            </ul>
+          </div>
+
+          <div class="about__visual-col" data-anim="fade-left">
+            <div class="about__photo-frame">
+              <div class="about__photo-placeholder">
+                <img src="assets/images/ana-photo.webp"
+                     alt="Ana Mercedes Murray Adames — angehende Fachinformatikerin, Hamburg"
+                     width="280" height="280"
+                     class="about__photo-img"
+                     loading="lazy" decoding="async">
+              </div>
+              <div class="about__photo-ring" aria-hidden="true"></div>
+              <div class="about__photo-ring about__photo-ring--2" aria-hidden="true"></div>
+            </div>
+
+            <div class="about__stats" aria-label="Schlüsselzahlen">
+              <div class="about__stat">
+                <span class="about__stat-num" data-target="2">0</span>
+                <span class="about__stat-unit"></span>
+                <span class="about__stat-lbl">Zertifikate</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num" data-target="4">0</span>
+                <span class="about__stat-unit"></span>
+                <span class="about__stat-lbl">Eigene Projekte</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num" data-target="3">0</span>
+                <span class="about__stat-unit"></span>
+                <span class="about__stat-lbl">Sprachen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         TRANSFORMATION TIMELINE
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="timeline" class="section timeline" aria-labelledby="timeline-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">02</span>
+          <span class="section__eyebrow" data-i18n="timeline.eyebrow">02 — Transformation Journey</span>
+          <h2 id="timeline-heading" class="section__title" data-i18n="timeline.title">
+            Von der Pflegeassistentin<br><em>zur Entwicklerin</em>
+          </h2>
+        </header>
+
+        <ol class="timeline__track" aria-label="Karriere-Timeline">
+
+          <li class="tl-item tl-item--left" data-anim="tl-reveal">
+            <div class="tl-node" aria-hidden="true"><span>⚕</span></div>
+            <article class="tl-card glass-card">
+              <time class="tl-card__year" datetime="2023/2025">2023–2025</time>
+              <h3 class="tl-card__title">Ausbildung Gesundheits- und Pflegeassistentin</h3>
+              <p class="tl-card__place">Ambulante Pflege Hilfe Daheim, Hamburg</p>
+              <p class="tl-card__desc">Pflege und Betreuung von Patientinnen und Patienten zu Hause. Lückenlose Pflegedokumentation, Schweigepflicht im Umgang mit Gesundheitsdaten, Arbeit im Tourenbetrieb mit festen Zeitfenstern. Abschluss Anfang 2025 — zusammen mit dem Mittleren Schulabschluss.</p>
+              <div class="tl-card__tags">
+                <span class="chip">Dokumentation</span>
+                <span class="chip">Datenschutz</span>
+                <span class="chip">Verantwortung</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="tl-item tl-item--right" data-anim="tl-reveal">
+            <div class="tl-node" aria-hidden="true"><span>💡</span></div>
+            <article class="tl-card glass-card">
+              <time class="tl-card__year" datetime="2025">2025</time>
+              <h3 class="tl-card__title">Berufliche Neuorientierung</h3>
+              <p class="tl-card__place">Hamburg</p>
+              <p class="tl-card__desc">Nach dem Abschluss habe ich mich bewusst für die IT entschieden und mich gezielt auf die Umschulung vorbereitet. Die Software, mit der ich in der Pflege gearbeitet habe, wollte ich selbst besser machen können.</p>
+              <div class="tl-card__tags">
+                <span class="chip">Neuanfang</span>
+                <span class="chip">Klarheit</span>
+                <span class="chip">Mut</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="tl-item tl-item--left" data-anim="tl-reveal">
+            <div class="tl-node" aria-hidden="true"><span>🎓</span></div>
+            <article class="tl-card glass-card">
+              <time class="tl-card__year" datetime="2025-12">Seit 12/2025</time>
+              <h3 class="tl-card__title">Umschulung Fachinformatikerin für Anwendungsentwicklung</h3>
+              <p class="tl-card__place">CBW Hamburg · IHK-Abschluss 2027</p>
+              <p class="tl-card__desc">Programmierung, Datenbanken und SQL, Webentwicklung mit HTML, CSS und JavaScript, Linux, UML und agile Methoden.</p>
+              <div class="tl-card__tags">
+                <span class="chip">Python · Java</span>
+                <span class="chip">SQL</span>
+                <span class="chip">HTML · CSS · JS</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="tl-item tl-item--right" data-anim="tl-reveal">
+            <div class="tl-node tl-node--active" aria-label="Aktuell" aria-hidden="true"><span>⚡</span></div>
+            <article class="tl-card tl-card--active glass-card">
+              <time class="tl-card__year" datetime="2026">2026 — Jetzt</time>
+              <h3 class="tl-card__title">Zertifikate &amp; eigene Projekte</h3>
+              <p class="tl-card__place">Scrum.org · Python Institute · GitHub</p>
+              <p class="tl-card__desc">April 2026: Professional Scrum Master I. August 2026: PCAP – Certified Associate Python Programmer. Dazu eigene Projekte auf GitHub: Lagerverwaltung in Java, Auftragsverwaltung mit SQL und ein Tourenplaner für die ambulante Pflege.</p>
+              <div class="tl-card__tags">
+                <span class="chip chip--gold">PSM I</span>
+                <span class="chip chip--gold">PCAP</span>
+                <span class="chip chip--teal">GitHub</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="tl-item tl-item--left" data-anim="tl-reveal">
+            <div class="tl-node tl-node--future" aria-label="Zukunft" aria-hidden="true"><span>🚀</span></div>
+            <article class="tl-card tl-card--future glass-card">
+              <time class="tl-card__year" datetime="2027">2027</time>
+              <h3 class="tl-card__title">Praktikum → IHK-Abschluss</h3>
+              <p class="tl-card__place">Hamburg · 26.04.–30.11.2027</p>
+              <p class="tl-card__desc">Das nächste Kapitel: meine betriebliche Lernphase in einem Entwicklungsteam, danach die IHK-Abschlussprüfung als Fachinformatikerin für Anwendungsentwicklung — und der Einstieg als Junior-Entwicklerin.</p>
+              <div class="tl-card__tags">
+                <span class="chip chip--ghost">Praktikum</span>
+                <span class="chip chip--ghost">IHK-Prüfung</span>
+                <span class="chip chip--ghost">Junior Dev</span>
+              </div>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         SKILL CONSTELLATION
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="skills" class="section skills" aria-labelledby="skills-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">03</span>
+          <span class="section__eyebrow" data-i18n="skills.eyebrow">03 — Tech Stack</span>
+          <h2 id="skills-heading" class="section__title" data-i18n="skills.title">Skill Constellation</h2>
+          <p class="section__sub" data-i18n="skills.sub">Jede Technologie ist ein Stern in meinem digitalen Universum</p>
+        </header>
+
+        <div class="skills__grid" aria-label="Technologie-Kenntnisse">
+
+          <article class="skill-card glass-card skill-card--featured" data-anim="skill-pop" data-delay="0.0" tabindex="0" aria-label="Python — Zertifiziert — PCAP">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">🐍</span>
+            <h3 class="skill-card__name">Python</h3>
+            <p class="skill-card__lvl skill-card__lvl--gold">Zertifiziert — PCAP</p>
+            <p class="skill-card__desc">OOP · Module · Exceptions · unittest</p>
+            <div class="skill-bar" role="meter" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Python Kenntnis: 70%">
+              <div class="skill-bar__fill skill-bar__fill--gold" style="--p:70%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.05" tabindex="0" aria-label="Java — Lerne aktiv">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">☕</span>
+            <h3 class="skill-card__name">Java</h3>
+            <p class="skill-card__lvl">Lerne aktiv</p>
+            <p class="skill-card__desc">OOP · Maven · JUnit 5</p>
+            <div class="skill-bar" role="meter" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Java Kenntnis: 50%">
+              <div class="skill-bar__fill" style="--p:50%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.1" tabindex="0" aria-label="SQL &amp; Datenbanken — Gute Grundlagen">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">🗄️</span>
+            <h3 class="skill-card__name">SQL &amp; Datenbanken</h3>
+            <p class="skill-card__lvl">Gute Grundlagen</p>
+            <p class="skill-card__desc">ER-Modell · 3NF · JOINs · SQLite</p>
+            <div class="skill-bar" role="meter" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="SQL &amp; Datenbanken Kenntnis: 55%">
+              <div class="skill-bar__fill" style="--p:55%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.15" tabindex="0" aria-label="HTML5 — Gute Kenntnisse">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">🌐</span>
+            <h3 class="skill-card__name">HTML5</h3>
+            <p class="skill-card__lvl">Gute Kenntnisse</p>
+            <p class="skill-card__desc">Semantik · Barrierefreiheit</p>
+            <div class="skill-bar" role="meter" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 Kenntnis: 70%">
+              <div class="skill-bar__fill" style="--p:70%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.2" tabindex="0" aria-label="CSS3 — Gute Kenntnisse">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">🎨</span>
+            <h3 class="skill-card__name">CSS3</h3>
+            <p class="skill-card__lvl">Gute Kenntnisse</p>
+            <p class="skill-card__desc">Flexbox · Grid · Responsive</p>
+            <div class="skill-bar" role="meter" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 Kenntnis: 65%">
+              <div class="skill-bar__fill" style="--p:65%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.25" tabindex="0" aria-label="JavaScript — Lerne aktiv">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">⚡</span>
+            <h3 class="skill-card__name">JavaScript</h3>
+            <p class="skill-card__lvl">Lerne aktiv</p>
+            <p class="skill-card__desc">DOM · Events · ES6+ · node --test</p>
+            <div class="skill-bar" role="meter" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript Kenntnis: 50%">
+              <div class="skill-bar__fill" style="--p:50%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.3" tabindex="0" aria-label="Testing — Lerne aktiv">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">🧪</span>
+            <h3 class="skill-card__name">Testing</h3>
+            <p class="skill-card__lvl">Lerne aktiv</p>
+            <p class="skill-card__desc">JUnit 5 · unittest · CI mit GitHub Actions</p>
+            <div class="skill-bar" role="meter" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Testing Kenntnis: 45%">
+              <div class="skill-bar__fill" style="--p:45%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.35" tabindex="0" aria-label="Git / GitHub — Gute Grundlagen">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">🌿</span>
+            <h3 class="skill-card__name">Git / GitHub</h3>
+            <p class="skill-card__lvl">Gute Grundlagen</p>
+            <p class="skill-card__desc">Commits · Branches · Actions</p>
+            <div class="skill-bar" role="meter" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Git / GitHub Kenntnis: 55%">
+              <div class="skill-bar__fill" style="--p:55%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.4" tabindex="0" aria-label="Linux — Grundlagen">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">🐧</span>
+            <h3 class="skill-card__name">Linux</h3>
+            <p class="skill-card__lvl">Grundlagen</p>
+            <p class="skill-card__desc">Terminal · Dateisystem · Bash</p>
+            <div class="skill-bar" role="meter" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Linux Kenntnis: 45%">
+              <div class="skill-bar__fill" style="--p:45%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card" data-anim="skill-pop" data-delay="0.45" tabindex="0" aria-label="UML — Gute Kenntnisse">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">📐</span>
+            <h3 class="skill-card__name">UML</h3>
+            <p class="skill-card__lvl">Gute Kenntnisse</p>
+            <p class="skill-card__desc">Klassendiagramme · Use Cases</p>
+            <div class="skill-bar" role="meter" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="UML Kenntnis: 60%">
+              <div class="skill-bar__fill" style="--p:60%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card skill-card--featured" data-anim="skill-pop" data-delay="0.5" tabindex="0" aria-label="Scrum / Agile — Zertifiziert — PSM I">
+            <div class="skill-card__glow" aria-hidden="true"></div>
+            <span class="skill-card__icon" aria-hidden="true">🏆</span>
+            <h3 class="skill-card__name">Scrum / Agile</h3>
+            <p class="skill-card__lvl skill-card__lvl--gold">Zertifiziert — PSM I</p>
+            <p class="skill-card__desc">Sprints · Rollen · Artefakte</p>
+            <div class="skill-bar" role="meter" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Scrum / Agile Kenntnis: 80%">
+              <div class="skill-bar__fill skill-bar__fill--gold" style="--p:80%"></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         GIT LEARNING JOURNEY
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="git-journey" class="section git-section" aria-labelledby="git-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">04</span>
+          <span class="section__eyebrow">04 — Aktuell lernend</span>
+          <h2 id="git-heading" class="section__title">
+            Git Version Control<br><em>Journey</em>
+          </h2>
+        </header>
+
+        <div class="git__layout">
+          <div class="git__terminal glass-card" data-anim="fade-up">
+            <div class="git__term-bar" aria-hidden="true">
+              <span class="git__dot git__dot--r"></span>
+              <span class="git__dot git__dot--y"></span>
+              <span class="git__dot git__dot--g"></span>
+              <span class="git__term-title">ana@hamburg:~/lagerverwaltung-java $</span>
+            </div>
+            <div class="git__term-body" role="log" aria-label="Git Terminal Simulation">
+              <p class="git__line"><span class="git__ps">$</span> <span class="git__cmd">git clone https://github.com/MurrayCloud/lagerverwaltung-java</span></p>
+              <p class="git__line"><span class="git__ps">$</span> <span class="git__cmd">./mvnw test</span></p>
+              <p class="git__line git__out">[INFO] Tests run: 18, Failures: 0, Errors: 0</p>
+              <p class="git__line git__out">[INFO] BUILD SUCCESS</p>
+              <p class="git__line"><span class="git__ps">$</span> <span class="git__cmd">git switch -c <span class="git__branch">feature/nachbestellliste</span></span></p>
+              <p class="git__line git__out">Switched to a new branch 'feature/nachbestellliste'</p>
+              <p class="git__line"><span class="git__ps">$</span> <span class="git__cmd">git commit -m <span class="git__str">"Nachbestellliste nach Dringlichkeit sortieren"</span></span></p>
+              <p class="git__line"><span class="git__ps">$</span> <span class="git__cmd">git push origin feature/nachbestellliste</span><span class="git__cursor" aria-hidden="true">▊</span></p>
+            </div>
+          </div>
+
+          <div class="git__concepts" data-anim="fade-left">
+            <h3 class="git__heading">Was ich gerade lerne</h3>
+            <div class="git__grid">
+              <div class="git__concept glass-card">
+                <span aria-hidden="true">📌</span>
+                <h4>Commits</h4>
+                <p>Jede Änderung dokumentieren. Clean History. Meaningful Messages.</p>
+              </div>
+              <div class="git__concept glass-card">
+                <span aria-hidden="true">🌿</span>
+                <h4>Branches</h4>
+                <p>Features isoliert entwickeln. main bleibt immer sauber.</p>
+              </div>
+              <div class="git__concept glass-card">
+                <span aria-hidden="true">🔀</span>
+                <h4>Pull Requests</h4>
+                <p>Code Review, Zusammenarbeit, saubere Integration.</p>
+              </div>
+              <div class="git__concept glass-card">
+                <span aria-hidden="true">☁️</span>
+                <h4>GitHub</h4>
+                <p>Öffentliches Portfolio. Jeder Commit zeigt meinen Fortschritt.</p>
+              </div>
+            </div>
+            <blockquote class="git__quote">
+              <p>"Ich weiß noch nicht alles. Aber ich lerne schnell, mit Disziplin, Struktur und echter Leidenschaft."</p>
+              <footer>— Ana Mercedes Murray Adames</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         BUILDING IN PUBLIC
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="github" class="section building" aria-labelledby="building-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">05</span>
+          <span class="section__eyebrow" data-i18n="building.eyebrow">05 — Building in Public</span>
+          <h2 id="building-heading" class="section__title" data-i18n="building.title">
+            Meine Entwicklung<br><em>ist öffentlich</em>
+          </h2>
+          <p class="section__sub" data-i18n="building.sub">Jeder Commit auf GitHub ist ein Beweis meiner Disziplin</p>
+        </header>
+
+        <div class="building__card glass-card" data-anim="fade-up">
+          <div class="building__header">
+            <div class="building__avatar" aria-hidden="true">MC</div>
+            <div class="building__meta">
+              <h3>MurrayCloud</h3>
+              <p>Angehende Fachinformatikerin (Anwendungsentwicklung) · Hamburg</p>
+            </div>
+            <a href="https://github.com/MurrayCloud"
+               class="btn btn--secondary btn--sm"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="GitHub Profil öffnen">
+              Profil ansehen →
+            </a>
+          </div>
+
+          <div class="building__contrib-section" aria-hidden="true">
+            <p class="building__contrib-label">Beitragsaktivität</p>
+            <div class="building__contrib-grid" id="contrib-grid"></div>
+          </div>
+
+          <ul class="building__repos" role="list" aria-label="Öffentliche Repositories">
+            <li class="building__repo">
+              <span class="building__repo-icon" aria-hidden="true">📁</span>
+              <div class="building__repo-info">
+                <h4><a href="https://github.com/MurrayCloud/lagerverwaltung-java" target="_blank" rel="noopener noreferrer">lagerverwaltung-java</a></h4>
+                <p>Lagerverwaltung als Konsolenanwendung — Wareneingang, Warenausgang, Nachbestellliste, 18 JUnit-Tests</p>
+              </div>
+              <div class="building__repo-langs" aria-label="Verwendete Sprachen">
+                <span class="lang-dot" style="--c:#b07219" aria-label="Java"></span>Java
+              </div>
+            </li>
+            <li class="building__repo">
+              <span class="building__repo-icon" aria-hidden="true">📁</span>
+              <div class="building__repo-info">
+                <h4><a href="https://github.com/MurrayCloud/auftragsverwaltung-sql" target="_blank" rel="noopener noreferrer">auftragsverwaltung-sql</a></h4>
+                <p>Datenbankentwurf vom ER-Modell bis zu ERP-Auswertungen in SQL, mit Python-Berichtswerkzeug</p>
+              </div>
+              <div class="building__repo-langs" aria-label="Verwendete Sprachen">
+                <span class="lang-dot" style="--c:#e38c00" aria-label="SQL"></span>SQL
+                <span class="lang-dot" style="--c:#3572A5" aria-label="Python"></span>Python
+              </div>
+            </li>
+            <li class="building__repo">
+              <span class="building__repo-icon" aria-hidden="true">📁</span>
+              <div class="building__repo-info">
+                <h4><a href="https://github.com/MurrayCloud/pflege-tourenplaner" target="_blank" rel="noopener noreferrer">pflege-tourenplaner</a></h4>
+                <p>Tourenplanung für einen ambulanten Pflegedienst — mit Plausibilitätsprüfung und Live-Demo</p>
+              </div>
+              <div class="building__repo-langs" aria-label="Verwendete Sprachen">
+                <span class="lang-dot" style="--c:#f1e05a" aria-label="JavaScript"></span>JavaScript
+                <span class="lang-dot" style="--c:#e34c26" aria-label="HTML"></span>HTML
+                <span class="lang-dot" style="--c:#563d7c" aria-label="CSS"></span>CSS
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         CERTIFICATIONS
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="certifications" class="section certs" aria-labelledby="certs-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">06</span>
+          <span class="section__eyebrow" data-i18n="certs.eyebrow">06 — Zertifikate</span>
+          <h2 id="certs-heading" class="section__title" data-i18n="certs.title">
+            Nachgewiesene<br><em>Kompetenz</em>
+          </h2>
+        </header>
+
+        <div class="certs__grid">
+
+          <article class="cert-card cert-card--featured glass-card" data-anim="fade-up" aria-label="PCAP – Certified Associate Python Programmer">
+            <div class="cert-card__body">
+              <span class="cert-card__icon" aria-hidden="true">🐍</span>
+              <h3>PCAP – Certified Associate Python Programmer</h3>
+              <p class="cert-card__issuer">Python Institute · 28.08.2026</p>
+              <p>Objektorientierte Programmierung, Module und Pakete, Exception-Handling, Strings und Dateien in Python.</p>
+              <div class="cert-card__chips">
+                <span class="chip chip--gold">Python</span>
+                <span class="chip chip--gold">OOP</span>
+                <span class="chip chip--gold">ID XUo0.UaRN.VfsS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card cert-card--featured glass-card" data-anim="fade-up" data-delay="0.1" aria-label="Professional Scrum Master I">
+            <div class="cert-card__body">
+              <span class="cert-card__icon" aria-hidden="true">🏆</span>
+              <h3>Professional Scrum Master I (PSM I)</h3>
+              <p class="cert-card__issuer">Scrum.org · 24.04.2026</p>
+              <p>Scrum-Rollen, Events und Artefakte, Sprint Planning, Retrospektiven und Selbstorganisation von Teams.</p>
+              <div class="cert-card__chips">
+                <span class="chip chip--gold">Scrum</span>
+                <span class="chip chip--gold">Agile</span>
+                <a class="chip chip--gold" href="https://www.scrum.org/certificates/1314862" target="_blank" rel="noopener noreferrer">Zertifikat prüfen ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card glass-card" data-anim="fade-up" data-delay="0.2" aria-label="Fachinformatikerin für Anwendungsentwicklung — in Umschulung">
+            <div class="cert-card__body">
+              <span class="cert-card__icon" aria-hidden="true">🎓</span>
+              <h3>Fachinformatikerin für Anwendungsentwicklung (IHK)</h3>
+              <p class="cert-card__issuer">CBW Hamburg · 12/2025 – 11/2027</p>
+              <p>Umschulung mit IHK-Abschlussprüfung. Praktikum (betriebliche Lernphase) vom 26.04. bis 30.11.2027.</p>
+              <div class="cert-progress">
+                <span class="cert-progress__label">In Umschulung — Abschluss 2027</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card cert-card--planned glass-card" data-anim="fade-up" data-delay="0.3" aria-label="Nächste Zertifizierung — AWS in Vorbereitung">
+            <div class="cert-card__body">
+              <span class="cert-card__icon" aria-hidden="true">☁️</span>
+              <h3>AWS Certified Cloud Practitioner</h3>
+              <p class="cert-card__issuer">In Vorbereitung</p>
+              <p>Cloud-Grundlagen: Dienste, Sicherheit, Kosten und Architektur in AWS.</p>
+              <p class="cert-card__coming">Demnächst ✨</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         PROJECTS
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="projects" class="section projects" aria-labelledby="projects-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">07</span>
+          <span class="section__eyebrow" data-i18n="projects.eyebrow">07 — Projekte</span>
+          <h2 id="projects-heading" class="section__title" data-i18n="projects.title">
+            Was ich<br><em>baue</em>
+          </h2>
+          <p class="section__sub" data-i18n="projects.sub">Jedes Projekt — ein Beweis meines Lernfortschritts</p>
+        </header>
+
+        <div class="projects__grid">
+
+          <article class="proj-card glass-card" data-anim="fade-up" aria-label="Projekt: Premium Portfolio Website">
+            <div class="proj-card__head">
+              <span class="proj-card__num" aria-hidden="true">01</span>
+              <span class="proj-card__status proj-card__status--live">Live</span>
+            </div>
+            <h3 class="proj-card__title">Premium Portfolio Website</h3>
+            <p class="proj-card__challenge"><strong>Herausforderung:</strong> Eine persönliche Webpräsenz, die Werdegang, Projekte und Zertifikate übersichtlich zeigt — dreisprachig und DSGVO-konform.</p>
+            <p class="proj-card__solution"><strong>Lösung:</strong> Dark-Mode-Design mit GSAP-Animationen, Sprachumschaltung DE/EN/ES, PHP-Kontaktformular und selbst gehosteten Schriften ohne Tracking.</p>
+            <ul class="proj-card__tech" aria-label="Verwendete Technologien">
+              <li><span class="tech-chip">HTML5</span></li>
+              <li><span class="tech-chip">CSS3</span></li>
+              <li><span class="tech-chip">JavaScript</span></li>
+              <li><span class="tech-chip">GSAP</span></li>
+              <li><span class="tech-chip">PHP</span></li>
+            </ul>
+            <div class="proj-card__links">
+              <a href="https://anamurray.de" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Portfolio Live Demo öffnen">Demo →</a>
+              <a href="https://github.com/MurrayCloud" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository öffnen">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="proj-card proj-card--featured glass-card" data-anim="fade-up" data-delay="0.08" aria-label="Projekt: Cerveseria Elite — Live Website">
+            <div class="proj-card__head">
+              <span class="proj-card__num" aria-hidden="true">02</span>
+              <span class="proj-card__status proj-card__status--live">Live ✓</span>
+            </div>
+            <h3 class="proj-card__title">Cerveseria Elite</h3>
+            <p class="proj-card__subtitle">
+              <a href="https://cerveseria.anamurray.de/" target="_blank" rel="noopener noreferrer" class="proj-card__url">cerveseria.anamurray.de ↗</a>
+            </p>
+            <p class="proj-card__challenge"><strong>Herausforderung:</strong> Premium-Webpräsenz für einen Licor-Store mit Luxury-Positionierung — "Luxury Drinks. Premium Nights."</p>
+            <p class="proj-card__solution"><strong>Lösung:</strong> Elegantes Minimalist-Design mit raffinierter Typographie, 4-seitiger Navigation (Home · Menu · About · Contact) und direkten Konversions-CTAs für maximale Wirkung.</p>
+            <ul class="proj-card__tech" aria-label="Verwendete Technologien">
+              <li><span class="tech-chip">HTML5</span></li>
+              <li><span class="tech-chip">CSS3</span></li>
+              <li><span class="tech-chip">JavaScript</span></li>
+              <li><span class="tech-chip">Responsive</span></li>
+              <li><span class="tech-chip">UX/UI</span></li>
+            </ul>
+            <div class="proj-card__links">
+              <a href="https://cerveseria.anamurray.de/" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Cerveseria Elite live öffnen">Live ansehen →</a>
+              <a href="https://github.com/MurrayCloud" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository öffnen">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="proj-card proj-card--featured glass-card" data-anim="fade-up" data-delay="0.16" aria-label="Projekt: Pflege-Tourenplaner">
+            <div class="proj-card__head">
+              <span class="proj-card__num" aria-hidden="true">03</span>
+              <span class="proj-card__status proj-card__status--live">Live ✓</span>
+            </div>
+            <h3 class="proj-card__title">Pflege-Tourenplaner</h3>
+            <p class="proj-card__challenge"><strong>Herausforderung:</strong> Tourenplanung im ambulanten Pflegedienst passiert oft auf Papier oder in Excel — Ausfälle und Zeitfenster kosten jeden Morgen Zeit.</p>
+            <p class="proj-card__solution"><strong>Lösung:</strong> Webanwendung, die Einsätze automatisch verteilt (Greedy-Verfahren) und jeden Plan prüft: Behandlungspflege nur durch Fachkräfte, Zeitfenster, Überschneidungen. Fachwissen aus meiner eigenen Praxis.</p>
+            <ul class="proj-card__tech" aria-label="Verwendete Technologien">
+              <li><span class="tech-chip">JavaScript</span></li>
+              <li><span class="tech-chip">HTML5</span></li>
+              <li><span class="tech-chip">CSS3</span></li>
+              <li><span class="tech-chip">node --test</span></li>
+            </ul>
+            <div class="proj-card__links">
+              <a href="https://murraycloud.github.io/pflege-tourenplaner/" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Pflege-Tourenplaner live öffnen">Live ansehen →</a>
+              <a href="https://github.com/MurrayCloud/pflege-tourenplaner" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository pflege-tourenplaner öffnen">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="proj-card glass-card" data-anim="fade-up" data-delay="0.24" aria-label="Projekt: Lagerverwaltung">
+            <div class="proj-card__head">
+              <span class="proj-card__num" aria-hidden="true">04</span>
+              <span class="proj-card__status proj-card__status--live">Auf GitHub</span>
+            </div>
+            <h3 class="proj-card__title">Lagerverwaltung</h3>
+            <p class="proj-card__challenge"><strong>Herausforderung:</strong> Der Kern eines ERP-Systems im Bereich Logistik: Artikel, Wareneingang, Warenausgang und Lagerwert — fehlerfrei und nachvollziehbar.</p>
+            <p class="proj-card__solution"><strong>Lösung:</strong> Java-Konsolenanwendung mit Schichtenarchitektur, exakter Berechnung mit BigDecimal, Buchungsjournal, CSV-Persistenz, 18 JUnit-5-Tests und CI über GitHub Actions.</p>
+            <ul class="proj-card__tech" aria-label="Verwendete Technologien">
+              <li><span class="tech-chip">Java 21</span></li>
+              <li><span class="tech-chip">Maven</span></li>
+              <li><span class="tech-chip">JUnit 5</span></li>
+              <li><span class="tech-chip">GitHub Actions</span></li>
+            </ul>
+            <div class="proj-card__links">
+              <a href="https://github.com/MurrayCloud/lagerverwaltung-java" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository lagerverwaltung-java öffnen">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="proj-card glass-card" data-anim="fade-up" data-delay="0.32" aria-label="Projekt: Auftragsverwaltung">
+            <div class="proj-card__head">
+              <span class="proj-card__num" aria-hidden="true">05</span>
+              <span class="proj-card__status proj-card__status--live">Auf GitHub</span>
+            </div>
+            <h3 class="proj-card__title">Auftragsverwaltung</h3>
+            <p class="proj-card__challenge"><strong>Herausforderung:</strong> Ein sauberes Datenmodell für die Auftragsabwicklung eines Großhändlers — von Kunden bis Auftragspositionen.</p>
+            <p class="proj-card__solution"><strong>Lösung:</strong> ER-Modell, normalisiertes Schema (3NF) in SQLite, zehn typische ERP-Auswertungen in SQL und ein Python-Werkzeug, das Berichte als Tabelle oder CSV für Excel ausgibt.</p>
+            <ul class="proj-card__tech" aria-label="Verwendete Technologien">
+              <li><span class="tech-chip">SQL</span></li>
+              <li><span class="tech-chip">SQLite</span></li>
+              <li><span class="tech-chip">Python</span></li>
+              <li><span class="tech-chip">ER-Modell</span></li>
+            </ul>
+            <div class="proj-card__links">
+              <a href="https://github.com/MurrayCloud/auftragsverwaltung-sql" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository auftragsverwaltung-sql öffnen">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="proj-card proj-card--cta glass-card" data-anim="fade-up" data-delay="0.4">
+            <div class="proj-card__cta-inner">
+              <span aria-hidden="true">🚀</span>
+              <h3>Mehr kommt bald</h3>
+              <p>Ich lerne und baue weiter. Neue Projekte erscheinen auf meinem GitHub.</p>
+              <a href="https://github.com/MurrayCloud" class="btn btn--primary" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profil MurrayCloud besuchen">
+                GitHub folgen →
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         MEDICAL SUPERPOWER
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="medical" class="section medical" aria-labelledby="medical-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">08</span>
+          <span class="section__eyebrow" data-i18n="medical.eyebrow">08 — Mein Vorteil</span>
+          <h2 id="medical-heading" class="section__title" data-i18n="medical.title">
+            Warum mein Hintergrund in der Pflege<br><em>mich zur besseren Entwicklerin macht</em>
+          </h2>
+        </header>
+
+        <blockquote class="medical__quote" data-anim="fade-up">
+          <p>"In der Pflege kann ein Fehler einem Menschen schaden. Im Code kostet er Vertrauen.<br>In beiden Welten zählt Sorgfalt."</p>
+        </blockquote>
+
+        <div class="medical__grid" data-anim="fade-up">
+
+          <div class="medical__bridge">
+            <div class="medical__side medical__side--op">
+              <span class="medical__side-icon" aria-hidden="true">⚕</span>
+              <h3>Pflege</h3>
+            </div>
+            <div class="medical__arrow-anim" aria-hidden="true">
+              <span>→</span>
+            </div>
+            <div class="medical__side medical__side--dev">
+              <span class="medical__side-icon" aria-hidden="true">💻</span>
+              <h3>Anwendungsentwicklung</h3>
+            </div>
+          </div>
+
+          <ul class="medical__traits" role="list" aria-label="Übertragene Fähigkeiten">
+            <li class="medical__trait glass-card">
+              <span class="medical__trait-op"><span aria-hidden="true">🩺</span> Vitalwerte erfassen &amp; beobachten</span>
+              <span class="medical__trait-arrow" aria-hidden="true">→</span>
+              <span class="medical__trait-dev"><span aria-hidden="true">📊</span> Daten analysieren &amp; debuggen</span>
+            </li>
+            <li class="medical__trait glass-card">
+              <span class="medical__trait-op"><span aria-hidden="true">⏱️</span> Prioritäten im Tourenbetrieb</span>
+              <span class="medical__trait-arrow" aria-hidden="true">→</span>
+              <span class="medical__trait-dev"><span aria-hidden="true">🎯</span> Deadlines und Prioritäten</span>
+            </li>
+            <li class="medical__trait glass-card">
+              <span class="medical__trait-op"><span aria-hidden="true">👥</span> Absprachen mit Team, Ärzten &amp; Angehörigen</span>
+              <span class="medical__trait-arrow" aria-hidden="true">→</span>
+              <span class="medical__trait-dev"><span aria-hidden="true">🤝</span> Agile Teamarbeit</span>
+            </li>
+            <li class="medical__trait glass-card">
+              <span class="medical__trait-op"><span aria-hidden="true">📋</span> Lückenlose Pflegedokumentation</span>
+              <span class="medical__trait-arrow" aria-hidden="true">→</span>
+              <span class="medical__trait-dev"><span aria-hidden="true">📚</span> Clean Code &amp; Dokumentation</span>
+            </li>
+            <li class="medical__trait glass-card">
+              <span class="medical__trait-op"><span aria-hidden="true">💉</span> Empathie für Patienten</span>
+              <span class="medical__trait-arrow" aria-hidden="true">→</span>
+              <span class="medical__trait-dev"><span aria-hidden="true">🎨</span> User-Centered Design &amp; UX</span>
+            </li>
+            <li class="medical__trait glass-card">
+              <span class="medical__trait-op"><span aria-hidden="true">🔒</span> Schweigepflicht &amp; Gesundheitsdaten</span>
+              <span class="medical__trait-arrow" aria-hidden="true">→</span>
+              <span class="medical__trait-dev"><span aria-hidden="true">🛡️</span> Datenschutz &amp; DSGVO</span>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         WARUM ICH — PRAKTIKUM CTA
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="warum" class="section warum" aria-labelledby="warum-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">09</span>
+          <span class="section__eyebrow" data-i18n="warum.eyebrow">09 — Warum ich?</span>
+          <h2 id="warum-heading" class="section__title" data-i18n="warum.title">
+            Warum sollten Sie mich<br><em>für ein Praktikum wählen?</em>
+          </h2>
+        </header>
+
+        <p class="warum__lead" data-anim="fade-up" data-i18n="warum.lead">
+          Ich bringe etwas mit, das man nicht aus einem Buch lernt: <strong>echte Berufserfahrung mit Menschen und Verantwortung</strong> — kombiniert mit einem frischen technischen Blick und großer Lernbereitschaft.
+        </p>
+
+        <ul class="warum__list" role="list" data-anim="fade-up">
+          <li class="warum__item glass-card">
+            <span class="warum__icon" aria-hidden="true">⚡</span>
+            <div>
+              <h3>Ich lerne schnell — wirklich schnell</h3>
+              <p>Neben der Vollzeit-Umschulung habe ich in vier Monaten zwei internationale Zertifikate abgelegt: PSM I (April 2026) und PCAP (August 2026).</p>
+            </div>
+          </li>
+          <li class="warum__item glass-card">
+            <span class="warum__icon" aria-hidden="true">🏋️</span>
+            <div>
+              <h3>Ich habe echte Disziplin</h3>
+              <p>Vollzeit-Umschulung, Selbststudium und eigene Projekte. Struktur und Verlässlichkeit habe ich in der Pflege jeden Tag gelebt.</p>
+            </div>
+          </li>
+          <li class="warum__item glass-card">
+            <span class="warum__icon" aria-hidden="true">🎨</span>
+            <div>
+              <h3>Ich denke an die Nutzer</h3>
+              <p>Mein Pflege-Tourenplaner zeigt es: Ich übersetze echte fachliche Abläufe in Software, die im Alltag hilft.</p>
+            </div>
+          </li>
+          <li class="warum__item glass-card">
+            <span class="warum__icon" aria-hidden="true">🌍</span>
+            <div>
+              <h3>Ich bin mehrsprachig</h3>
+              <p>Deutsch und Spanisch als Muttersprachen, dazu Englisch (B2). Ein Vorteil in internationalen Teams.</p>
+            </div>
+          </li>
+          <li class="warum__item glass-card">
+            <span class="warum__icon" aria-hidden="true">🧠</span>
+            <div>
+              <h3>Ich kombiniere Mensch &amp; Technik</h3>
+              <p>Aus der Pflege weiß ich, wie es ist, mit Software zu arbeiten, die nicht für ihre Nutzer gemacht wurde. Genau das will ich besser machen.</p>
+            </div>
+          </li>
+          <li class="warum__item glass-card">
+            <span class="warum__icon" aria-hidden="true">🚀</span>
+            <div>
+              <h3>Ich suche mehr als ein Praktikum</h3>
+              <p>Ich suche ein Unternehmen, bei dem ich wachsen, beitragen und langfristig Teil des Teams werden kann.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="warum__cta" data-anim="fade-up">
+          <p class="warum__cta-text">Lassen Sie uns sprechen — bevor es eine andere Firma tut.</p>
+          <a href="#contact" class="btn btn--primary btn--lg btn--mag">
+            <span>Jetzt Kontakt aufnehmen</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="section__inner">
+
+        <header class="section__header" data-anim="fade-up">
+          <span class="section__counter" aria-hidden="true">10</span>
+          <span class="section__eyebrow" data-i18n="contact.eyebrow">10 — Kontakt</span>
+          <h2 id="contact-heading" class="section__title" data-i18n="contact.title">
+            Lassen Sie uns<br><em>zusammenarbeiten</em>
+          </h2>
+          <p class="section__sub" data-i18n="contact.sub">Für Unternehmen, Mentoren oder Gleichgesinnte</p>
+        </header>
+
+        <div class="contact__layout">
+
+          <div class="contact__details" data-anim="fade-up">
+            <div class="contact__detail">
+              <span class="contact__detail-icon" aria-hidden="true">📍</span>
+              <div>
+                <h3>Standort</h3>
+                <p>Hamburg, Deutschland</p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-icon" aria-hidden="true">🎓</span>
+              <div>
+                <h3>Verfügbarkeit</h3>
+                <p>Praktikum: 26.04. – 30.11.2027</p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-icon" aria-hidden="true">✉️</span>
+              <div>
+                <h3>E-Mail</h3>
+                <p><a href="mailto:a.murray2630@gmail.com">a.murray2630@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-icon" aria-hidden="true">🔗</span>
+              <div>
+                <h3>Online</h3>
+                <div class="contact__social">
+                  <a href="https://www.linkedin.com/in/ana-mercedes-murray-a96753414/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profil öffnen">LinkedIn ↗</a>
+                  <a href="https://github.com/MurrayCloud" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profil öffnen">GitHub ↗</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-icon" aria-hidden="true">🌍</span>
+              <div>
+                <h3>Sprachen</h3>
+                <p>Deutsch &amp; Spanisch (Muttersprachen) · Englisch (B2)</p>
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" action="backend/contact.php" method="post" class="contact__form glass-card" data-anim="fade-left" novalidate aria-label="Kontaktformular">
+            <div class="form__row">
+              <div class="form__group">
+                <label for="f-name" class="form__label">Name <span class="form__required" aria-label="Pflichtfeld">*</span></label>
+                <input type="text" id="f-name" name="name" class="form__input"
+                  placeholder="Ihr vollständiger Name" required autocomplete="name" aria-required="true"
+                  aria-describedby="err-name">
+                <span class="form__err" id="err-name" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label for="f-email" class="form__label">E-Mail <span class="form__required" aria-label="Pflichtfeld">*</span></label>
+                <input type="email" id="f-email" name="email" class="form__input"
+                  placeholder="ihre@email.de" required autocomplete="email" aria-required="true"
+                  aria-describedby="err-email">
+                <span class="form__err" id="err-email" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="f-company" class="form__label">Unternehmen <span class="form__opt">(optional)</span></label>
+              <input type="text" id="f-company" name="company" class="form__input"
+                placeholder="Name Ihres Unternehmens" autocomplete="organization">
+            </div>
+            <div class="form__group">
+              <label for="f-message" class="form__label">Nachricht <span class="form__required" aria-label="Pflichtfeld">*</span></label>
+              <textarea id="f-message" name="message" class="form__textarea"
+                placeholder="Ihre Nachricht an Ana..." required rows="5" aria-required="true"
+                aria-describedby="err-message"></textarea>
+              <span class="form__err" id="err-message" role="alert" aria-live="polite"></span>
+            </div>
+            <!-- Honeypot gegen Spam-Bots: für Menschen unsichtbar -->
+            <div class="form__hp" aria-hidden="true">
+              <label for="f-website">Website</label>
+              <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="started_at" id="f-started" value="0">
+            </div>
+            <div class="form__group form__group--check">
+              <label class="form__check-label">
+                <input type="checkbox" id="f-privacy" name="privacy" class="form__check"
+                  required aria-required="true" aria-describedby="err-privacy">
+                <span class="form__check-box" aria-hidden="true"></span>
+                <span>Ich habe die <button type="button" class="form__link-btn" data-modal="datenschutz">Datenschutzerklärung</button> gelesen und stimme der Verarbeitung meiner Daten zu. <span class="form__required" aria-label="Pflichtfeld">*</span></span>
+              </label>
+              <span class="form__err" id="err-privacy" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--full btn--mag" id="submit-btn">
+              <span class="btn-label">Nachricht senden</span>
+              <span class="btn-loading" hidden aria-hidden="true">Wird gesendet…</span>
+            </button>
+            <div id="form-success" class="form__success" role="alert" aria-live="polite" hidden>
+              <span aria-hidden="true">✓</span> Vielen Dank! Ich melde mich so bald wie möglich.
+            </div>
+            <div id="form-error-msg" class="form__error-msg" role="alert" aria-live="polite" hidden>
+              <span aria-hidden="true">⚠</span> Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie mir direkt an a.murray2630@gmail.com.
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__logo">AM</p>
+          <p class="footer__tagline">Von der Pflege zur Softwareentwicklung.</p>
+          <p class="footer__domain">anamurray.de</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer Navigation">
+          <div class="footer__nav-col">
+            <h3>Navigation</h3>
+            <ul role="list">
+              <li><a href="#about">Über mich</a></li>
+              <li><a href="#timeline">Journey</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projekte</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3>Verbinden</h3>
+            <ul role="list">
+              <li><a href="https://www.linkedin.com/in/ana-mercedes-murray-a96753414/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+              <li><a href="https://github.com/MurrayCloud" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+              <li><a href="assets/cv/ana-murray-cv.pdf" download>Lebenslauf ↓</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3>Rechtliches</h3>
+            <ul role="list">
+              <li><a href="#" data-modal="impressum">Impressum</a></li>
+              <li><a href="#" data-modal="datenschutz">Datenschutzerklärung</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Ana Mercedes Murray Adames — anamurray.de</p>
+        <p>Gebaut mit 💙 in Hamburg</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════════
+       MODALS
+  ════════════════════════════════════════════════════════════════════════════════════ -->
+  <div id="modal-impressum" class="modal" role="dialog" aria-modal="true" aria-labelledby="imp-title" hidden>
+    <div class="modal__overlay" data-close="impressum"></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close="impressum" aria-label="Impressum schließen">✕</button>
+      <div class="modal__scroll">
+        <h2 id="imp-title">Impressum</h2>
+        <h3>Angaben gemäß § 5 DDG</h3>
+        <p>Ana Mercedes Murray Adames<br>{{STRASSE}}<br>{{PLZ_ORT}}<br>Deutschland</p>
+        <h3>Kontakt</h3>
+        <p>E-Mail: <a href="mailto:a.murray2630@gmail.com">a.murray2630@gmail.com</a></p>
+        <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+        <p>Ana Mercedes Murray Adames, Anschrift wie oben</p>
+        <h3>Haftung für Inhalte</h3>
+        <p>Als Diensteanbieterin bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+        <h3>Urheberrecht</h3>
+        <p>Die durch die Seitenbetreiberin erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung bedürfen der schriftlichen Zustimmung.</p>
+        <h3>Externe Links</h3>
+        <p>Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte kein Einfluss besteht. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-datenschutz" class="modal" role="dialog" aria-modal="true" aria-labelledby="ds-title" hidden>
+    <div class="modal__overlay" data-close="datenschutz"></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close="datenschutz" aria-label="Datenschutzerklärung schließen">✕</button>
+      <div class="modal__scroll">
+        <h2 id="ds-title">Datenschutzerklärung</h2>
+        <h3>1. Verantwortliche</h3>
+        <p>Ana Mercedes Murray Adames, {{STRASSE}}, {{PLZ_ORT}}. E-Mail: <a href="mailto:a.murray2630@gmail.com">a.murray2630@gmail.com</a></p>
+        <h3>2. Hosting und Server-Logfiles</h3>
+        <p>Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter technisch notwendige Daten (z. B. IP-Adresse, Zeitpunkt, aufgerufene Seite, Browser) in Server-Logfiles, um die Website sicher und stabil bereitzustellen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Mit dem Hosting-Anbieter besteht ein Vertrag zur Auftragsverarbeitung (Art. 28 DSGVO).</p>
+        <h3>3. Keine Drittanbieter, kein Tracking</h3>
+        <p>Schriften und Skripte werden direkt von diesem Server geladen. Es werden keine Daten an Google, CDN-Anbieter oder Analyse-Dienste übertragen. Es gibt kein Tracking und keine Analyse-Cookies.</p>
+        <h3>4. Lokale Speicherung</h3>
+        <p>Ihre Sprachauswahl und Ihre Bestätigung des Datenschutz-Hinweises werden im Local Storage Ihres Browsers gespeichert und nicht an mich übertragen. Diese Website setzt keine Cookies. Rechtsgrundlage für die lokale Speicherung: § 25 Abs. 2 Nr. 2 TDDDG.</p>
+        <h3>5. Kontaktformular und E-Mail</h3>
+        <p>Wenn Sie mir über das Formular oder per E-Mail schreiben, verarbeite ich Ihre Angaben (Name, E-Mail, ggf. Unternehmen, Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage. Die Nachricht wird per E-Mail an mein Postfach weitergeleitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung eines Praktikums) bzw. lit. a (Einwilligung). Die Daten werden gelöscht, sobald sie nicht mehr benötigt werden. Eine Weitergabe an Dritte findet nicht statt.</p>
+        <h3>6. Schutz vor Missbrauch des Kontaktformulars</h3>
+        <p>Um Spam und massenhafte Anfragen zu verhindern, wird beim Absenden aus Ihrer IP-Adresse ein nicht umkehrbarer Hashwert mit täglich wechselndem Schlüssel gebildet und höchstens eine Stunde lang gespeichert. Die IP-Adresse selbst wird nicht gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am Schutz vor Missbrauch).</p>
+        <h3>7. Externe Links</h3>
+        <p>Links zu LinkedIn, GitHub und Scrum.org werden erst beim Anklicken aufgerufen. Erst dann gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
+        <h3>8. Ihre Rechte</h3>
+        <p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Eine erteilte Einwilligung können Sie jederzeit widerrufen. Kontakt: <a href="mailto:a.murray2630@gmail.com">a.murray2630@gmail.com</a></p>
+        <h3>9. Beschwerderecht</h3>
+        <p>Sie können sich bei einer Datenschutz-Aufsichtsbehörde beschweren. Zuständig für Hamburg: Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit.</p>
+        <p><em>Stand: Oktober 2026</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════════════════════════════════════════ -->
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Back to top -->
+  <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Nach oben scrollen">↑</a>
+</body>
+</html>

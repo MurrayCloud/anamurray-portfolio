@@ -1,0 +1,15 @@
+# Private Angaben – werden nur beim Bauen eingesetzt
+private.json
+assets/cv/*.pdf
+
+# Build-Ergebnisse
+dist/
+
+# Werkzeug-/Systemdateien
+__pycache__/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+.env
